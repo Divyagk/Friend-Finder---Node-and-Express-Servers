@@ -1,13 +1,17 @@
-var path = require("path");
 
-module.exports = function(app) {
-	// if user enters survey in URL or presses survey button, serves the survey HTML file
-	app.get("/survey", function(req, res) {
-		res.sendFile(path.join(__dirname, "/../public/survey.html"));
-	});
+//Dependencies
+var path = require('path');
 
-	// fallback use route for homepage
-	app.use(function(req, res) {
-		res.sendFile(path.join(__dirname, "/../public/home.html"));
-	});
+//ROUTING
+
+module.exports = function(app){
+  
+  app.get('/survey', function (req, res) {
+    res.sendFile(path.join(__dirname + '/../public/survey.html'));
+  });
+
+  //a USE route to home page
+  app.use(function (req, res) {
+    res.sendFile(path.join(__dirname + '/../public/home.html'));
+  });
 };

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Divyagk/Friend-Finder---Node-and-Express-Servers#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "node": "^11.7.0",
     "path": "^0.12.7"
   }

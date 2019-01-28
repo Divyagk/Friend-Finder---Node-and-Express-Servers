@@ -1,4 +1,4 @@
-var friendLists= [
+var friendList= [
     {
         "name": "Mohanlal",
         "photo":"https://www.filmibeat.com/ph-big/2015/12/mohanlal_145035026860.jpg",

@@ -15,3 +15,5 @@ var friends= [
         "scores": []
     }
 ]
+
+module.exports = friends;

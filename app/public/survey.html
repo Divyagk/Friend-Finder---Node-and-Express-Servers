@@ -156,10 +156,29 @@
         <br>
         <!-- submit button -->
         <div class="input-field col s12">
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
-            <i class="fa fa-check-circle" aria-hidden="true"></i>
-            Submit</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                Submit</button>
             <hr>
+            <!-- Modal after survey completion -->
+            <div id="bestFriendModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">Your New Best Friend</h1>
+                        </div>
+                        <div class="modal-body">
+                            <h2 id="bestFriend"></h2>
+                            <img id="bestFriendPhoto" src="#">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
             <div class="container">
                 <p>
@@ -169,11 +188,16 @@
                 </p>
             </div>
         </footer>
-        </div>
+    </div>
     </div>
 
 
 
 </body>
+<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
